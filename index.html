@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transaction Receipt - RBC</title>
+    <title>Royal Bank of Canada - Online Banking</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
         .container {
-            max-width: 600px;
+            max-width: 1200px;
             background: #fff;
             padding: 20px;
             border-radius: 10px;
@@ -21,12 +21,46 @@
         }
         .header {
             text-align: center;
-            font-size: 20px;
+            font-size: 28px;
             font-weight: bold;
-            margin-bottom: 20px;
+            padding: 20px;
+            background: #0077b6;
+            color: white;
+            border-radius: 10px 10px 0 0;
         }
-        .details {
-            line-height: 1.6;
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background: #005a8d;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .dashboard {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .section {
+            flex: 1;
+            margin: 10px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        .balance {
+            margin: 20px 10px;
+            padding: 15px;
+            background: #d4edda;
+            border-left: 5px solid #28a745;
             font-size: 16px;
         }
         .footer {
@@ -34,20 +68,59 @@
             text-align: center;
             font-size: 14px;
             color: #555;
+            padding: 15px;
+            background: #0077b6;
+            color: white;
+            border-radius: 0 0 10px 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">Royal Bank of Canada</div>
-        <div class="details">
-            <p><strong>Recipient:</strong> Jacob Amaitsa</p>
-            <p><strong>Amount Received:</strong> $800 USD</p>
-            <p><strong>Transaction Source:</strong> Remitly</p>
-            <p><strong>Date:</strong> 9th March 2025</p>
-            <p><strong>Time:</strong> 20:04 Hrs</p>
-            <p><strong>Reference Number:</strong> RBC-20250309-800</p>
+        <div class="header">Royal Bank of Canada - Online Banking</div>
+        
+        <div class="nav">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#send">Send Money</a>
+            <a href="#receive">Receive Money</a>
+            <a href="#withdraw">Withdraw Funds</a>
+            <a href="#loans">Loan Services</a>
         </div>
+        
+        <div class="balance">
+            <h3>Account Balance</h3>
+            <p><strong>Account Holder:</strong> Jacob Amaitsa</p>
+            <p><strong>Current Balance:</strong> $984.47 USD</p>
+        </div>
+        
+        <div class="dashboard">
+            <div id="send" class="section">
+                <h3>Send Money</h3>
+                <p>Securely transfer funds to anyone worldwide with low fees.</p>
+            </div>
+            
+            <div id="receive" class="section">
+                <h3>Receive Money</h3>
+                <p><strong>Recipient:</strong> Jacob Amaitsa</p>
+                <p><strong>Amount Received:</strong> $800 USD</p>
+                <p><strong>Transaction Source:</strong> Remitly</p>
+                <p><strong>Date:</strong> 9th March 2025</p>
+                <p><strong>Time:</strong> 20:04 Hrs</p>
+            </div>
+        </div>
+        
+        <div class="dashboard">
+            <div id="withdraw" class="section">
+                <h3>Withdraw Funds</h3>
+                <p>Withdraw your funds quickly and securely to your preferred bank account or mobile wallet.</p>
+            </div>
+            
+            <div id="loans" class="section">
+                <h3>Loan Services</h3>
+                <p>Need extra cash? Apply for personal, business, or mortgage loans with competitive interest rates.</p>
+            </div>
+        </div>
+        
         <div class="footer">
             <p>&copy; 2025 Royal Bank of Canada. All rights reserved.</p>
         </div>
